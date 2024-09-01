@@ -14,7 +14,7 @@ const Dashboard = ({ address }) => {
     const getCoins = async () => {
       try {
         const coins = await fetch(
-          'https://u5i352de.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20%27coins%27%5D%20%7B%0A%20%20name%2C%0A%20%20symbol%2C%0A%20%20contractAddress%2C%0A%20%20logo%2C%0A%20%20usdPrice%0A%7D',
+          '',
         )
         const tempSanityTokens = await coins.json()
 
